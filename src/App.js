@@ -4,8 +4,8 @@ import './App.css';
 
 import Login from "./components/login/Loginform";
 import Register from "./components/signup/signup";
-
-
+import Dashboard from "./components/Dashboard/Dashboard";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
@@ -14,6 +14,10 @@ function App() {
         
         <Route path="/signup" exact element={<Register />} />
         <Route path="/login" exact element={<Login />} />
+        <Route path="/dashboard" exact element={<Dashboard />} />
+        <Route path="/" exact element={<Home />} />
+
+
         
       </Routes>
     </Router>
